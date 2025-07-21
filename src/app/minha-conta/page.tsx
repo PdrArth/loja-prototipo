@@ -1,6 +1,9 @@
 'use client';
 
 import React, { useState } from 'react';
+
+// Força renderização dinâmica para evitar problemas com location durante build
+export const dynamic = 'force-dynamic';
 import { useAuth } from '@/contexts/AuthContext';
 import { useToast } from '@/components/ui/Toast/ToastContext';
 import { useRouter } from 'next/navigation';
