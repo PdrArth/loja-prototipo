@@ -11,13 +11,14 @@ export async function generateStaticParams() {
 }
 
 interface ProductDetailsPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
-export default function ProductDetailsPage({ params }: ProductDetailsPageProps) {
-  const product = getProductById(params.id);
+export default async function ProductDetailsPage({ params }: ProductDetailsPageProps) {
+  const { id } = await params;
+  const product = getProductById(id);
 
   if (!product) {
     return (
