@@ -1,0 +1,1 @@
+export { OptimizedProductActions } from './OptimizedProductActions';

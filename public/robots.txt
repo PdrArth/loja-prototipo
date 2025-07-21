@@ -1,0 +1,29 @@
+User-agent: *
+Allow: /
+
+# Disallow admin pages
+Disallow: /admin/
+Disallow: /admin-login-test/
+
+# Disallow test pages
+Disallow: /test-auth/
+
+# Disallow checkout process (to prevent indexing of incomplete purchases)
+Disallow: /checkout/
+Disallow: /carrinho/
+
+# Disallow user account pages
+Disallow: /minha-conta/
+Disallow: /meus-pedidos/
+Disallow: /login/
+Disallow: /cadastro/
+
+# Allow important pages
+Allow: /
+Allow: /produtos/
+Allow: /produto/
+Allow: /sobre/
+Allow: /contato/
+
+# Sitemap location
+Sitemap: https://loja-valentina.vercel.app/sitemap.xml
