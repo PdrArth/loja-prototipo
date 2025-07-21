@@ -12,11 +12,11 @@ export {
 } from './products';
 
 // Categorias
-export { 
-  ProductCategory, 
-  categories, 
-  getCategoryById, 
-  getAllCategories 
+export type { ProductCategory } from './categories';
+export {
+  categories,
+  getCategoryById,
+  getAllCategories
 } from './categories';
 
 // Imagens
