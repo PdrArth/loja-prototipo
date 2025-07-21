@@ -346,7 +346,7 @@ export default function AdminOrdersPage() {
 
   // Função para obter cor do status
   const getStatusColor = (status: Order['status']) => {
-    const colors = {
+    const colors: Record<string, string> = {
       pendente: 'bg-yellow-100 text-yellow-800',
       confirmado: 'bg-blue-100 text-blue-800',
       preparando: 'bg-purple-100 text-purple-800',
@@ -359,7 +359,7 @@ export default function AdminOrdersPage() {
 
   // Função para obter cor do pagamento
   const getPaymentColor = (status: string) => {
-    const colors = {
+    const colors: Record<string, string> = {
       pendente: 'bg-yellow-100 text-yellow-800',
       aprovado: 'bg-green-100 text-green-800',
       recusado: 'bg-red-100 text-red-800'
