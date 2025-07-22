@@ -64,38 +64,6 @@ pnpm dev
 ### 4. Acesse a aplicação
 Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
 
-## 🌐 Deploy na Vercel
-
-### Deploy Automático (Recomendado)
-
-1. **Conecte seu repositório GitHub à Vercel**:
-   - Acesse [vercel.com](https://vercel.com)
-   - Faça login com sua conta GitHub
-   - Clique em "New Project"
-   - Selecione este repositório
-   - Clique em "Deploy"
-
-2. **Configurações automáticas**:
-   - A Vercel detectará automaticamente que é um projeto Next.js
-   - As configurações de build serão aplicadas automaticamente
-   - O deploy será feito automaticamente a cada push na branch main
-
-### Deploy Manual via CLI
-
-```bash
-# Instale a CLI da Vercel
-npm i -g vercel
-
-# Faça login
-vercel login
-
-# Deploy
-vercel
-
-# Para deploy em produção
-vercel --prod
-```
-
 ## 📁 Estrutura do Projeto
 
 ```
@@ -133,15 +101,6 @@ npm run start
 npm run lint
 ```
 
-## 🌍 Variáveis de Ambiente
-
-Crie um arquivo `.env.local` na raiz do projeto (opcional):
-
-```env
-# Exemplo de variáveis que podem ser adicionadas
-NEXT_PUBLIC_SITE_URL=https://sua-loja.vercel.app
-NEXT_PUBLIC_ANALYTICS_ID=seu-analytics-id
-```
 
 ## 📱 Responsividade
 
